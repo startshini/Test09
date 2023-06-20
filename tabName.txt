@@ -1,0 +1,16 @@
+<TextView
+        android:id="@+id/TabName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="カロリー一覧"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:background="#FDB86D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".075"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="1" />
