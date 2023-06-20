@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".frmWeightGraph">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="1dp"
+        android:text="今日の体重"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/weightInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_graph_title"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/calBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Calorie"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/traBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Training"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".075"
+        app:layout_constraintStart_toEndOf="@+id/calBt"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/graBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Graph"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".075"
+        app:layout_constraintStart_toEndOf="@+id/traBt"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25" />
+
+    <Button
+        android:id="@+id/remBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Remind"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".075"
+        app:layout_constraintStart_toEndOf="@+id/graBt"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25" />
+
+    <TextView
+        android:id="@+id/weight_graph_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="体重グラフ"
+        android:textSize="48sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="477dp"
+        android:text="保存"
+        app:layout_constraintBottom_toTopOf="@+id/graBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weightInput"
+        app:layout_constraintTop_toTopOf="@+id/weightInput"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="481dp"
+        android:hint="〇〇.〇"
+        android:textColorHint="@color/black"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/calBt"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/stateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/weightInput"
+        app:layout_constraintStart_toStartOf="@+id/weightInput"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
