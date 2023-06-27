@@ -1,0 +1,53 @@
+    画面遷移のボタンタブしっかり見れる版
+
+     <Button
+        android:id="@+id/calBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default= "percent"
+        app:layout_constraintWidth_percent= ".25"
+        app:layout_constraintHeight_default= "percent"
+        app:layout_constraintHeight_percent= ".075"
+        android:text="Calorie"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/traBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default= "percent"
+        app:layout_constraintWidth_percent= ".25"
+        app:layout_constraintHeight_default= "percent"
+        app:layout_constraintHeight_percent= ".075"
+        android:text="Training"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calBt" />
+
+    <Button
+        android:id="@+id/graBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default= "percent"
+        app:layout_constraintWidth_percent= ".25"
+        app:layout_constraintHeight_default= "percent"
+        app:layout_constraintHeight_percent= ".075"
+        android:text="Graph"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/traBt" />
+
+    <Button
+        android:id="@+id/remBt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_default= "percent"
+        app:layout_constraintWidth_percent= ".25"
+        app:layout_constraintHeight_default= "percent"
+        app:layout_constraintHeight_percent= ".075"
+        android:text="Remind"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/graBt" />
