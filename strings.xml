@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dfs</string>
+    <string name="no_text">"No text !"</string>
+    <string name="saved">Saved</string>
+    <string name="read_error">Read file error !</string>
+    <string name="save_file">Save file</string>
+    <string name="read_file">Read file</string>
+</resources>
